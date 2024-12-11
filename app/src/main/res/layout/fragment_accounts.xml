@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="364dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/accounts" />
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="263dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="13dp"
+            android:drawableEnd="@drawable/baseline_create_24"
+            android:drawableTint="@color/primaryColor"
+            android:fontFamily="@font/abeezee"
+            android:includeFontPadding="true"
+            android:paddingStart="7dp"
+            android:paddingTop="11dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="15dp"
+            android:text="E-mail Addrerss"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="64dp"
+            android:text="CHANGE ACCOUNT" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="363dp"
+        android:layout_height="330dp"
+        android:backgroundTint="#D7DFF6"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/changpass"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/passchange"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primaryDarkColor"
+                android:includeFontPadding="true"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="15dp"
+                android:text="Change Password"
+                android:textColor="#0D26B6"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/twofact"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/twofact"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primaryDarkColor"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="25dp"
+                android:text="Two-factor authentication"
+                android:textColor="#0D26B6"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/loghis"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/history"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primaryDarkColor"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="24dp"
+                android:text="Login History"
+                android:textColor="#0D26B6"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/editprofile"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/scissor"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primaryDarkColor"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="25dp"
+                android:text="Edit Profile"
+                android:textColor="#0D26B6"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="338dp"
+        android:layout_height="58dp"
+        android:text="LOG OUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <Button
+        android:id="@+id/dltaccnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="DELETE ACCOUNT"
+        android:textColor="#D50000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0D47A1</color> <!-- Dark Blue -->
+    <color name="primaryDarkColor">#002171</color> <!-- Darker Blue -->
+    <color name="accentColor">#FF4081</color> <!-- Pink -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light Grey -->
+    <color name="textColorPrimary">#212121</color> <!-- Dark Grey -->
+    <color name="textColorSecondary">#757575</color> <!-- Medium Grey -->
+
+    <!-- Dark Mode Colors -->
+    <color name="primaryColorDark">#1E88E5</color> <!-- Lighter Blue -->
+    <color name="primaryDarkColorDark">#0D47A1</color> <!-- Dark Blue -->
+    <color name="accentColorDark">#FF4081</color> <!-- Pink -->
+    <color name="backgroundColorDark">#121212</color> <!-- Dark Grey -->
+    <color name="textColorPrimaryDark">#FFFFFF</color> <!-- White -->
+    <color name="textColorSecondaryDark">#B0B0B0</color> <!-- Light Grey -->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_900">#016ADB</color>
+    <color name="light_blue_A400">#0D98EC</color>
+</resources>

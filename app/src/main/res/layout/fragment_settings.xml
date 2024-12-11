@@ -1,0 +1,251 @@
+<!-- res/layout/fragment_settings.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Settings"
+        android:textColor="#0D26B6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#D7DFF6"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="true"
+                android:paddingStart="7dp"
+                android:paddingTop="15dp"
+                android:text="Enable Notifications"
+                android:textColor="#0D26B6"
+                android:textSize="16sp"
+                android:thumbTint="@color/light_blue_900" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/tvThemes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_theme"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Choose Theme"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/tvPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_privacy"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Privacy Settings"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#D7DFF6"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/applock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_app_lock"
+                android:drawablePadding="8dp"
+                android:focusable="true"
+                android:includeFontPadding="true"
+                android:paddingStart="5dp"
+                android:paddingTop="15dp"
+                android:text="App Lock"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/clearcache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_dust"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Clear Cache"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/datausage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_data"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Data Usage"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#D7DFF6"
+        android:elevation="8dp"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_report"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingStart="5dp"
+                android:paddingTop="15dp"
+                android:text="Report a problem"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/ratee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_rate"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Rate Us"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#0D26B6" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawablePadding="8dp"
+                android:includeFontPadding="true"
+                android:paddingVertical="8dp"
+                android:paddingStart="5dp"
+                android:text="Contact Us"
+                android:textColor="#0D26B6"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

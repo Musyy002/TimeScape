@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Setting PIN -->
+    <TextView
+        android:id="@+id/tvSetPinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a 4-Digit PIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:paddingBottom="24dp" />
+
+    <!-- PIN Input Display -->
+    <TextView
+        android:id="@+id/tvPinDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="••••"
+        android:textColor="@color/black"
+        android:paddingBottom="24dp" />
+
+    <!-- Numeric Keypad -->
+
+    <!-- Confirm Button -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="4">
+
+        <!-- Number Buttons -->
+        <Button
+            android:id="@+id/btnNum1"
+            style="@style/KeypadButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnNum2"
+            style="@style/KeypadButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnNum3"
+            style="@style/KeypadButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnNum4"
+            style="@style/KeypadButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnNum5"
+            style="@style/KeypadButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnNum6"
+            style="@style/KeypadButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnNum7"
+            style="@style/KeypadButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btnNum8"
+            style="@style/KeypadButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btnNum9"
+            style="@style/KeypadButtonStyle"
+            android:text="9" />
+
+        <!-- Empty space for alignment -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="1" />
+
+        <Button
+            android:id="@+id/btnNum0"
+            style="@style/KeypadButtonStyle"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnNumdlt"
+            style="@style/KeypadButtonStyle"
+            android:layout_marginTop="-100dp"
+            android:text="CL" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnConfirmPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_filled_button"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

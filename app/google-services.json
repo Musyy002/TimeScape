@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97174789814",
+    "project_id": "timescape-c9c78",
+    "storage_bucket": "timescape-c9c78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97174789814:android:f349f7011d10dd756fd017",
+        "android_client_info": {
+          "package_name": "com.example.timescape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6qaNEdT2jo31ZMcHDas6YfvXVTB2v9eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
